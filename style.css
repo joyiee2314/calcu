@@ -1,0 +1,82 @@
+:root{
+ --bg:#E6E6E6;
+ --lightgray:#F0F0F0; 
+ --gray: #EAEAEA;
+ --equal: #8ABAE0; 
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background-color: white;
+ max-width: 50vh;
+ margin: auto auto;
+}
+
+section{ 
+ margin-top: 100px;
+ background-color: var(--bg);
+ justify-content: flex-end; 
+ display:flex;
+ justify-content: space-between;
+}
+
+.top1 {
+     background-color: var(--bg);}
+
+.top2 {
+        background-color: var(--bg);}
+
+ .input{
+     display: grid;
+     background-color: var(--bg);
+     grid-column:1/5;
+     text-align: end;
+     font-size: 30px;
+     padding:20px 10px 0px;
+     font-weight: bolder;
+     border:none;
+   }
+
+    form{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+ .buttons{
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 3px 3px;
+}
+
+.operation{
+    background-color: var(--gray);
+}
+   
+.num{
+ background-color: var(--lightgray);
+ font-weight: bold; 
+}
+
+.equal{
+ background-color: var(--equal);
+}
+
+button{
+ cursor: pointer;
+ text-align: center;
+ font-size: 15px;
+ padding: 20px 20px;
+ border: none;
+}
+ 
+button:hover{
+ background-color:var(--bg)
+}
